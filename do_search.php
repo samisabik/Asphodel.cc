@@ -11,11 +11,11 @@ if (isset($_POST['search'])) {
      $error = db_error();
  } else {
 
-//     while ($row = mysql_fetch_array($result)){ 
-//     echo "<h1>";
-//     echo $row['storageLocation_id'];
-//     echo "</h1><br>";
-// } 
+    while ($row = mysqli_fetch_array($result)){ 
+    echo "<h1>";
+    echo $row['storageLocation_id'];
+    echo "</h1><br>";
+} 
 }
  }
 ?>
