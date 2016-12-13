@@ -4,6 +4,7 @@ if (isset($_POST['search'])) {
     $word = mysqli_real_escape_string($_POST['search']);
     $word = htmlentities($word);
         echo $word;
+        echo 'test';
 
     $result = db_query("SELECT name FROM Part WHERE content LIKE '%" . $word . "%' ORDER BY title LIMIT 10");
 
