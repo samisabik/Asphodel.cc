@@ -5,7 +5,7 @@ if (isset($_POST['search'])) {
     //$word = htmlentities($word);
     $word = $_POST['search'];
 
-    $result = db_query("SELECT storageLocation_id FROM Part WHERE name LIKE '%" . $word . "%'");
+    $result = db_query("SELECT storageLocation_id FROM Part WHERE name RLIKE '%" . $word . "%'");
 
  if($result === false) {
      $error = db_error();
