@@ -4,7 +4,6 @@ if (isset($_POST['search'])) {
     //$word = mysqli_real_escape_string($_POST['search']);
     //$word = htmlentities($word);
     $word = $_POST['search'];
-    echo $_POST['search'];
 
     $result = db_query("SELECT * FROM Part WHERE name LIKE '%" . $word . "");
 
