@@ -13,7 +13,7 @@
  
 $(function() {
  
-    $(".search_box").click(function() {
+    $(".search_button").click(function() {
         // getting the value that user typed
         var searchString    = $("#search_box").val();
         // forming the queryString
@@ -45,14 +45,17 @@ $(function() {
 </head>
 <body>
 
-<div id="container">
-<div style="margin:20px auto; text-align: center;">
+<div class="box">
+  <div class="container-1">
 <form method="post" action="do_search.php">
-    <input type="search" id="search_box" class='search_box' placeholder="Search..." />
+
     <input type="text" name="search" id="search_box" class='search_box'/>
     <input type="submit" value="Search" class="search_button" /><br />
 </form>
-</div>      
+</div>  
+</div>    
+
+
 <div style="margin:20px auto; text-align: center;">
  
 <ul id="results" class="update">

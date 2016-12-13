@@ -8,7 +8,7 @@ div.clear{clear:both;line-height:0;height:0;font-size:0;border:0;margin:0;paddin
 /* GENERAL */
 
 body {
-    background: #ffffff;
+  	background: #343d46;
     color: #333333;
     font-family: Inconsolata;
     font-size: 14px;
@@ -21,17 +21,61 @@ body {
     display: none;
 }
 
-*{ margin:0;padding:0; }
-#container { margin: 0 auto; width: 600px; }
-a { color:#DF3D82; text-decoration:none }
-a:hover { color:#DF3D82; text-decoration:underline; }
-ul.update { list-style:none;font-size:1.1em; margin-top:10px }
-ul.update li{ height:30px; border-bottom:#dedede solid 1px; text-align:left;}
-ul.update li:first-child{ border-top:#dedede solid 1px; height:30px; text-align:left; }
-#flash { margin-top:20px; text-align:left; }
-#searchresults { text-align:left; margin-top:20px; display:none; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; }
-.word { font-weight:bold; color:#000000; }
-#search_box { padding:4px; border:solid 1px #666666; width:300px; height:30px; font-size:18px;-moz-border-radius: 6px;-webkit-border-radius: 6px; }
-.search_button { border:#000000 solid 1px; padding: 6px; color:#000; font-weight:bold; font-size:16px;-moz-border-radius: 6px;-webkit-border-radius: 6px; }
-.found { font-weight: bold; font-style: italic; color: #ff0000; }
-h2 { margin-right: 70px; }
+ .box{
+  margin: 100px auto;
+  width: 300px;
+  height: 50px;
+}
+.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #262626;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+ 
+   
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
