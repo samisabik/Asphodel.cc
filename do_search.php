@@ -13,9 +13,7 @@ if (isset($_POST['search'])) {
 
     while ($row = mysqli_fetch_array($result)){ 
     $item = db_query("SELECT name FROM StorageLocation WHERE ID = " . $row['storageLocation_id'] . "")->fetch_object()->name; 
-    echo "<br><h1>";
-    print $item;
-    echo "</h1><br>";
+    echo '<h1>'. $item .'</h1>';
 } 
 }
 }
