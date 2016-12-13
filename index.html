@@ -45,11 +45,18 @@ $(function() {
 </head>
 <body>
 
-<div id="container">
-<div style="margin:20px auto; text-align: center;">
+<div class="field" id="searchform">
+  <input type="text" id="searchterm" placeholder="what are you searching for?" />
+  <button type="button" id="search">Find!</button>
+</div>
+
+
+<div class="field" id="searchform">
 <form method="post" action="do_search.php">
-    <input type="text" name="search" id="search_box" class='search_box'/>
-    <input type="submit" value="Search" class="search_button" /><br />
+
+  <input type="text" name="search" id="search_box" class='search_box' placeholder="what are you searching for?" />
+  <button type="button" id="search" class="search_button">Find!</button>
+  <input type="submit" value="Search" class="search_button" /><br />
 </form>
 </div>      
 <div style="margin:20px auto; text-align: center;">
