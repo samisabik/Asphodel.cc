@@ -4,8 +4,12 @@ if (isset($_POST['search'])) {
     $word = mysqli_real_escape_string($_POST['search']);
     $word = htmlentities($word);
 
-    $sql = "SELECT name FROM Part WHERE content LIKE '%" . $word . "%' ORDER BY title LIMIT 10";
-    $row = $connection->select_list($sql);
+    $result = db_query("SELECT name FROM Part WHERE content LIKE '%" . $word . "%' ORDER BY title LIMIT 10");
+
+if($result === false) {
+    $error = db_error();
+} else {
+
     
 
     // if(count($row)) {
@@ -19,5 +23,6 @@ if (isset($_POST['search'])) {
     //      echo $end_result;
     //  } else {      echo '<li>No results found</li>';
     //  }
+}
  }
 ?>
