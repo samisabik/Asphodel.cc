@@ -6,7 +6,7 @@ if (isset($_POST['search'])) {
     $word = $_POST['search'];
     echo $_POST['search'];
 
-    $result = db_query("SELECT name FROM Part WHERE content LIKE '%" . $word . "%' ORDER BY title LIMIT 10");
+    $result = db_query("SELECT * FROM Part WHERE name LIKE '%" . $word . "");
 
 if($result === false) {
     $error = db_error();
