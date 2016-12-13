@@ -15,7 +15,7 @@ if (isset($_POST['search'])) {
     //$result_2 = db_query("SELECT name FROM StorageLocation WHERE ID = %" . $row['storageLocation_id'] . "%");
     //$result_2 = db_query("SELECT name FROM StorageLocation WHERE ID = 15");
     
-    $id = mysqli_result(mysqli_query("SELECT name FROM StorageLocation WHERE ID = 15"),0);
+    $id = mysqli_result(db_query("SELECT name FROM StorageLocation WHERE ID = 15"),0);
 
     echo $id;
     echo "<h1>";
