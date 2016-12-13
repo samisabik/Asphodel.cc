@@ -5,7 +5,7 @@ if (isset($_POST['search'])) {
     //$word = htmlentities($word);
     $word = $_POST['search'];
 
-    $result = db_query("SELECT storageLocation_id FROM Part WHERE name LIKE '%" . $word . "%' ORDER BY title LIMIT 10");
+    $result = db_query("SELECT storageLocation_id FROM Part WHERE name LIKE '%" . $word . "%'");
 
 if($result === false) {
     $error = db_error();
@@ -14,6 +14,7 @@ if($result === false) {
     echo $result;
 
     while ($row = mysql_fetch_array($result)){ 
+        echo $row;
     echo "<h1>";
     echo $row['storageLocation_id'];
     echo "</h1><br>";
