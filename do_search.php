@@ -10,7 +10,7 @@ if($result === false) {
     $error = db_error();
 } else {
 
-    echo $result
+    echo $result;
 
     while ($row = mysql_fetch_array($result)){ 
     echo "<h1>";
