@@ -1,8 +1,14 @@
 <?php
-include('db.php');
+if (isset($_POST['search'])) {
+    include('db.php');
 
-//if we got something through $_POST
-// if (isset($_POST['search'])) {
+}
+
+
+
+
+
+//if (isset($_POST['search'])) {
 //     // here you would normally include some database connection
 //     include('db.php');
 //     // never trust what user wrote! We must ALWAYS sanitize user input
