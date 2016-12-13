@@ -11,10 +11,7 @@ if($result === false) {
     $error = db_error();
 } else {
 
-    echo $result;
-
     while ($row = mysql_fetch_array($result)){ 
-        echo $row;
     echo "<h1>";
     echo $row['storageLocation_id'];
     echo "</h1><br>";
