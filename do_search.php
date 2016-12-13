@@ -7,15 +7,15 @@ if (isset($_POST['search'])) {
 
     $result = db_query("SELECT storageLocation_id FROM Part WHERE name LIKE '%" . $word . "%'");
 
-if($result === false) {
-    $error = db_error();
-} else {
+// if($result === false) {
+//     $error = db_error();
+// } else {
 
-    while ($row = mysql_fetch_array($result)){ 
-    echo "<h1>";
-    echo $row['storageLocation_id'];
-    echo "</h1><br>";
-} 
-}
+//     while ($row = mysql_fetch_array($result)){ 
+//     echo "<h1>";
+//     echo $row['storageLocation_id'];
+//     echo "</h1><br>";
+// } 
+// }
  }
 ?>
