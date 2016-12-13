@@ -20,7 +20,7 @@ function db_connect() {
     // Try and connect to the database, if a connection has not been established yet
     if(!isset($connection)) {
          // Load configuration as an array. Use the actual location of your configuration file
-        $config = parse_ini_file('config.ini'); 
+        $config = parse_ini_file('config/config.ini'); 
         $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['dbname']);
     }
 
@@ -54,7 +54,7 @@ if($result === false) {
 	$error = db_error();
 } else {
     while ($row = mysqli_fetch_assoc($result)) {
-        echo "<h1>"
+        echo "<h1>";
         echo $row['name'];
         echo "</h1><br><br>";
     }
