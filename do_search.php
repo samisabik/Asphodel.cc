@@ -10,19 +10,19 @@ if($result === false) {
     $error = db_error();
 } else {
 
+    $row = mysql_fetch_array($result)
     
-
-    // if(count($row)) {
-    // $end_result = '';
-    // foreach($row as $r) {
-    //          $result         = $r['storageLocation_id'];
-    //          // we will use this to bold the search word in result
-    //          $bold           = '<span class="found">' . $word . '</span>';    
-    //          $end_result     .= '<li>' . str_ireplace($word, $bold, $result) . '</li>';            
-    //      }
-    //      echo $end_result;
-    //  } else {      echo '<li>No results found</li>';
-    //  }
+    if(count($row)) {
+    $end_result = '';
+    foreach($row as $r) {
+             $result         = $r['storageLocation_id'];
+             // we will use this to bold the search word in result
+             $bold           = '<span class="found">' . $word . '</span>';    
+             $end_result     .= '<li>' . str_ireplace($word, $bold, $result) . '</li>';            
+         }
+         echo $end_result;
+     } else {      echo '<li>No results found</li>';
+     }
 }
  }
 ?>
