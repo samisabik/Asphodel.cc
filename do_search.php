@@ -12,7 +12,6 @@ if (isset($_POST['search'])) {
  } else {
 
     while ($row = mysqli_fetch_array($result)){ 
-    print $row['storageLocation_id'];
     $item = db_query("SELECT name FROM StorageLocation WHERE ID = '%" . $row['storageLocation_id'] . "%'")->fetch_object()->name; 
     echo "<br><h1>";
     print $item;
