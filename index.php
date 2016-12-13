@@ -56,7 +56,7 @@ if($result === false) {
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<h1>"
         echo $row['name'];
-        echo "</h1><br>";
+        echo "</h1><br><br>";
     }
 }
 ?>
