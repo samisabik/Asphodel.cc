@@ -12,8 +12,9 @@ if (isset($_POST['search'])) {
  } else {
 
     while ($row = mysqli_fetch_array($result)){ 
+    $result_2 = db_query("SELECT name FROM StorageLocation WHERE id=%" . $row['storageLocation_id'] . "%");
+    echo $result_2;
     echo "<h1>";
-    echo $row['storageLocation_id'];
     echo "</h1><br>";
 } 
 }
