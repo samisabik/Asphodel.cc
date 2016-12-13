@@ -8,8 +8,6 @@ div.clear{clear:both;line-height:0;height:0;font-size:0;border:0;margin:0;paddin
 /* GENERAL */
 
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 
 body {
   	background-color:#34495e;    
@@ -38,7 +36,7 @@ h1 {
 
 .field {
   display:flex;
-  position:realtive;
+  position:relative;
   margin:5em auto;
   width:70%;
   flex-direction:row;
