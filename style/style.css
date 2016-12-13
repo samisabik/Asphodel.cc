@@ -1,32 +1,4 @@
-@charset "UTF-8";
-
-/* RESET AND CLEAR */
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,img,a.img,img a{list-style-type:none;border:0;font-weight:inherit;font-style:inherit;font-family: Inconsolata, Menlo, monospace, inherit;outline:none;border-style:none;border-width:0;margin:0;padding:0;}
-div.clear{clear:both;line-height:0;height:0;font-size:0;border:0;margin:0;padding:0;}
-
-/* GENERAL */
-
-
-
-body {
-  	background-color:#34495e;    
-  	color: #333333;
-    font-family: Inconsolata;
-    font-size: 14px;
-    line-height: 20px;
-    overflow: hidden;
-}
-
-h1 {
-	color: white;
-    font-family: Inconsolata;
-    font-size: 14px;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
 
 * {
     margin:0;
@@ -34,9 +6,13 @@ h1 {
     font:12pt Arial;
 }
 
+body {
+  background-color:#34495e;
+}
+
 .field {
   display:flex;
-  position:relative;
+  position:realtive;
   margin:5em auto;
   width:70%;
   flex-direction:row;
