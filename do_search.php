@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['search'])) {
     include('db.php');
-    $word = mysql_real_escape_string($_POST['search']);
+    $word = mysqli_real_escape_string($_POST['search']);
     $word = htmlentities($word);
 }
 
