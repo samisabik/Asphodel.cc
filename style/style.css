@@ -19,13 +19,6 @@ li {
 
 }
 
-li:before{
-content: "<i class="fa fa-chevron-right" aria-hidden="true"></i>";
-font-family: "FontAwesome";
-width: 10px;
-height: 10px;
-}
-
 #results {
   display:flex;
   position:relative;
