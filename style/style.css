@@ -15,7 +15,7 @@ h1 {
     color: white;
 }
 
-.results {
+#results {
   display:flex;
   position:realtive;
   margin:5em auto;
