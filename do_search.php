@@ -14,7 +14,7 @@ if (isset($_POST['search'])) {
 
     while ($row = mysqli_fetch_array($result)){ 
     $item = db_query("SELECT name FROM StorageLocation WHERE ID = " . $row['storageLocation_id'] . "")->fetch_object()->name; 
-    echo '<li><i class="fa fa-chevron-right" aria-hidden="true"></i>'. $item .'</li>';
+    echo '<li><i class="fa fa-chevron-right" aria-hidden="true"></i> &nbsp;'. $item .'</li>';
 } 
     echo '</ul>';
 
