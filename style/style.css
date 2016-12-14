@@ -16,7 +16,10 @@ li {
   font:1.5em 'Montserrat';
   margin: 10px 0;
   list-style-type: none;
+}
 
+.fa-ul {
+    margin-left: 0; */
 }
 
 #results {
