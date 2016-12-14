@@ -11,6 +11,10 @@ body {
   background-color:#34495e;
 }
 
+li {
+  color: white;
+}
+
 #results {
   display:flex;
   position:relative;
