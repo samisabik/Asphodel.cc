@@ -15,8 +15,15 @@ li {
   color: white;
   font:1.2em 'Montserrat';
   margin: 10px 0;
-  list-style-type: disc;
+  list-style-type: none;
 
+}
+
+li:before{
+content: "<i class="fa fa-chevron-right" aria-hidden="true"></i>";
+font-family: "FontAwesome";
+width: 10px;
+height: 10px;
 }
 
 #results {
