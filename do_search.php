@@ -10,12 +10,13 @@ if (isset($_POST['search'])) {
  if($result === false) {
      $error = db_error();
  } else {
+    echo '<ul>';
 
     while ($row = mysqli_fetch_array($result)){ 
     $item = db_query("SELECT name FROM StorageLocation WHERE ID = " . $row['storageLocation_id'] . "")->fetch_object()->name; 
-    echo '<ul> '. $item .'</ul>';
+    echo '<li> '. $item .'</li>';
 } 
-
+    echo '</ul>';
 
 }
 }
