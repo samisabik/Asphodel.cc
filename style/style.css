@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 * {
     margin:0;
@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    font:1.2em 'Montserrat Alternates';
+    font:1em 'Montserrat';
     color: white;
 }
 
@@ -35,7 +35,7 @@ h1 {
 .field>input[type=text],
 .field>button {
   display:block;
-  font:1.2em 'Montserrat Alternates';
+  font:1.2em 'Montserrat';
 }
 
 .field>input[type=text] {
