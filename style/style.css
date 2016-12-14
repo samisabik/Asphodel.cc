@@ -15,9 +15,18 @@ h1 {
     color: white;
 }
 
+#results{
+  display:flex;
+  text-align: left;
+  position:relative;
+  margin:5em auto;
+  width:40%;
+  flex-direction:row;
+}
+
 .field {
   display:flex;
-  position:realtive;
+  position:relative;
   margin:5em auto;
   width:40%;
   flex-direction:row;
