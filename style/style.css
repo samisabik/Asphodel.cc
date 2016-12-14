@@ -3,30 +3,21 @@
 * {
     margin:0;
     padding:0;
-    font:1.2em 'Montserrat';
-    color: black;
+    font:12pt Arial;
 }
 
 body {
   background-color:#34495e;
 }
 
-ul {
+h1 {
+    font:1.2em 'Montserrat';
     color: white;
-}
-
-#results{
-  display:flex;
-  text-align: left;
-  position:relative;
-  margin:10em auto;
-  width:40%;
-  flex-direction:row;
 }
 
 .field {
   display:flex;
-  position:relative;
+  position:realtive;
   margin:5em auto;
   width:40%;
   flex-direction:row;
